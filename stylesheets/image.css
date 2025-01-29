@@ -1,0 +1,11 @@
+.profile_picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.main_display {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
