@@ -1,16 +1,22 @@
 html {
+    /*
     scroll-behavior: smooth;
-    scroll-padding-top: 64px;
+    scroll-padding-top: 64px;*/
     display: block;
     font-size: 18px;
     font-style: bold;
 }
 
+:root {
+    --color-beige: hsla(36, 31%, 90%, 1);
+    --color-green500: hsla(172, 95%, 18%, 1);
+}
+
 
 body {
     margin: 0;
-    background: #1b1b1b;
-    color: #e5e5e5;
+    background: var(--color-beige);
+    color: var(--color-green500);
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: .875rem;
     font-weight: 400;

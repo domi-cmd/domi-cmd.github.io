@@ -1,0 +1,69 @@
+.socials {
+    display: flex;
+    margin-top: 32px;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Tooltip container */
+.has_tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip appearance */
+.tooltip {
+    pointer-events: none;
+    user-select: none;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity .2s ease;
+    position: absolute;
+    z-index: 1;
+    inline-size: max-content;
+    max-inline-size: 25ch;
+    text-align: center;
+    font-size: .725rem;
+    font-weight: normal;
+    line-height: normal;
+    padding: .75ch 1.5ch;
+    inset-inline-start: 50%;
+    inset-block-start: calc(100% + 1ch); /* Position below */
+    margin: 0;
+    border-radius: 5px;
+    background: rgba(97, 97, 97, .9);
+    color: #fff;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+}
+
+/* Show the tooltip when hovering over the icon */
+.has_tooltip:hover .tooltip {
+    opacity: 1;
+}
+
+/* Tooltip arrow customization */
+.tooltip::before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: -10px; /* Arrow above the tooltip */
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    background: rgba(97, 97, 97, .9);
+}
+
+/* Tooltip position - for now just bottom */
+.tooltip[tip-position="bottom"] {
+    inset-block-start: calc(100% + 1ch); /* Display below */
+}
+
+/* Adjust the SVG size */
+a svg {
+    width: 50px; /* Adjust width */
+    height: 50px; /* Adjust height */
+}
