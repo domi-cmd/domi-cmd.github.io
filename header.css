@@ -214,7 +214,21 @@
 
 
 body {
+    font-family: var(--bodyFont);
+    font-size: var(--16px);
     color: var(--color-text-primary);
+    background: var(--color-primary);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    transition-behavior: normal;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "liga" on;
+    font-feature-settings: "liga" on;
 }
 
 header {
