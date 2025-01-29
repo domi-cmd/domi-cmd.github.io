@@ -27,6 +27,13 @@
                 </nav>
             </header>
             <main id="top">
+                <!-- Sparcle effect -->
+                <div id="tsparticles" style="position: fixed; inset: 0; z-index: -10;">
+                    <canvas data-generated="true" style="width: 100% !important; height: 100% !important; position: fixed !important; z-index: 0 !important; top: 0px !important; left: 0px 
+                    !important; pointer-events: none;" aria-hidden="true" width="948" height="962">
+                </canvas></div>
+
+
                 <div class ="main_display">
 
 
@@ -95,5 +102,49 @@
                 </div>
             </main>
         </div>
+
+
+
+        <script>
+            function setupParticlesBackground() {
+              tsParticles.load("tsparticles", {
+                particles: {
+                    color: {
+                        value: "hsla(172, 95%, 18%, 1)", // Change this to your preferred color (e.g., yellow)
+                  },
+                  links: {
+                    enable: true,
+                    distance: 100,
+                    opacity: 0.5,
+                    color: "hsla(172, 95%, 18%, 1)",
+                  },
+                  number: {
+                    density: {
+                      enable: true,
+                      value_area: 800,
+                    },
+                    value: 55,
+                  },
+                  size: {
+                    value: 3,
+                  },
+                  move: {
+                    direction: 'none',
+                    enable: true,
+                    outMode: 'bounce',
+                    random: false,
+                    speed: 2,
+                    straight: false,
+                  },
+                  opacity: {
+                    value: 0.5,
+                  },
+                },
+                retina_detect: true,
+              });
+            }
+          </script>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js" integrity="sha256-Kq9IblhtnUOu75DRD4BIgJ4p4/7JUMMy6eXI/YcTo0c=" crossorigin="anonymous" async="" defer="" onload="setupParticlesBackground()"></script>
     </body>
 </html>
