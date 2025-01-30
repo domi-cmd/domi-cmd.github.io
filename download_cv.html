@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="stylesheets/timeline.css">
   <link rel="stylesheet" href="stylesheets/base_page_template.css">
   <link rel="stylesheet" href="stylesheets/navigation_bar.css">
-  
+
 
 </head>
 
@@ -66,11 +66,48 @@
                     !important; pointer-events: none;" aria-hidden="true" width="948" height="962">
         </canvas>
       </div>
-      <h1>This is the Download CV page.</h1>
+
+      <!-- Actual page content -->
+      <div class="template">
+        <!-- Explanatory text here (MISSING TODO) -->
+
+      </div>
+      
     </main>
   </div>
 
+  <!-- Script that adds the drop down navigation menu functionality -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 
+      const navbar = document.querySelector("nav");
+      const observer = new IntersectionObserver(entries => {
+        if (entries[0].boundingClientRect.y < 0) {
+          navbar.classList.add("navbar--sticky");
+        } else {
+          navbar.classList.remove("navbar--sticky");
+        }
+      });
+      observer.observe(document.querySelector("#navbar-trigger"));
 
+      const drawer = document.getElementById("navbar-drawer");
+      const drawerOpenBtn = document.getElementById("drawer-open");
+      const drawerCloseBtn = document.getElementById("drawer-close");
+
+      drawerOpenBtn.addEventListener("click", () => {
+        drawer.showModal();
+      });
+      document.querySelectorAll("#drawer-close, #navbar-drawer a").forEach(element => {
+        element.addEventListener("click", () => {
+          drawer.close();
+        });
+      });
+    });
+  </script>
+  <script async="" defer="" data-website-id="25c8aedf-a960-4b55-8c70-7bc4b2ad587b"
+    src="https://umami.diogotc.com/hellothere.js" data-domains="diogotc.com,www.diogotc.com"></script>
+
+  <!-- Script that adds the background effect. -->
   <script>
     function setupParticlesBackground() {
       tsParticles.load("tsparticles", {
@@ -110,10 +147,10 @@
       });
     }
   </script>
-
   <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js"
     integrity="sha256-Kq9IblhtnUOu75DRD4BIgJ4p4/7JUMMy6eXI/YcTo0c=" crossorigin="anonymous" async="" defer=""
     onload="setupParticlesBackground()"></script>
+
 </body>
 
 </html>
