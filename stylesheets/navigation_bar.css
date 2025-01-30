@@ -1,44 +1,11 @@
-html {
-    /*
-    scroll-behavior: smooth;
-    scroll-padding-top: 64px;*/
-    display: block;
-    font-size: 18px;
-    font-style: bold;
-}
-
-:root {
-    --color-beige: hsla(36, 31%, 90%, 1);
-    --color-green500: hsla(172, 95%, 18%, 1);
-}
-
-
-body {
-    margin: 0;
-    background: var(--color-beige);
-    color: var(--color-green500);
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-size: .875rem;
-    font-weight: 400;
-    line-height: 1.43;
-    letter-spacing: .01071em;
-    display: block;
-    margin-top: 1%;
-    margin-right: 1%;
-    margin-left: 1%;
-}
-
-
-* {
-    box-sizing: border-box;
-}
-
-
-
-
-
+/*
+    NAV RELATED CSS BELOW
+                            */
+                            
+/*
+TODO check for reiteration of values etc, clena up
+*/
 nav {
-    /* position: fixed; */
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -55,13 +22,6 @@ body > header > nav.navbar--sticky {
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
 }
 
-
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-
-/* DOESNT WORK YET*/
 .icon-button {
     padding: 12px;
     border-radius: 50%;
@@ -76,7 +36,6 @@ div {
     min-width: unset;
     cursor: pointer;
 }
-
 
 .icon-button svg {
     fill: var(--color-green500);
@@ -103,23 +62,6 @@ div {
     flex-direction: column;
     gap: 1rem;
 }
-/* DOESNT WORK YET*/
-
-/*
-body>header>nav>div:first-child {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-}*/
-
-
-a {
-    text-decoration: none;
-}
-
-
 
 .header_button {
     font-size: .875rem;
@@ -142,43 +84,6 @@ a {
 }
 
 
-.main_display h1 {
-    font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
-    font-size: 4rem;
-    font-weight: 300;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
-
-.main_display h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
-
-
-
 body > header > nav {
     position: fixed;
     top: 0;
@@ -198,34 +103,21 @@ body > header > nav {
   
     transition: all 250ms;
   
-  }
-
-  h1 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: 0.0075em;
-    margin: 0;
-  }
+}
 
 
-  h1 a {
-    color: inherit;
-  }
-
-
-  body > header > nav.navbar--sticky {
+body > header > nav.navbar--sticky {
     background: #1b1b1b;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 
                 0px 2px 2px 0px rgba(0, 0, 0, .14), 
                 0px 1px 5px 0px rgba(0, 0, 0, .12);
-  }
+}
 
-  nav .first_part {
+nav .first_part {
     display: flex;
     align-items: center;
     gap: 1rem;
-  }
+}
 
 
 @media (min-width: 850px) {
