@@ -13,7 +13,7 @@
     padding-top: 50px;
     min-width: 64px;
     transition: background-color 250ms cubic-bezier(.4, 0, .2, 1) 0ms;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 1.75;
     border-radius: 4px;
     letter-spacing: .02857em;

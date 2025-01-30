@@ -8,6 +8,11 @@ html {
 }
 
 
+* {
+    box-sizing: border-box;
+}
+
+
 :root {
     --color-beige: hsla(36, 31%, 90%, 1);
     --color-green500: hsla(172, 95%, 18%, 1);
@@ -30,19 +35,18 @@ body {
 }
 
 
-* {
-    box-sizing: border-box;
-}
-
-
 div {
     display: block;
     unicode-bidi: isolate;
 }
 
 
+/*
+    This is used for the styling of the navigation bar texts. They inherit the --color.green500 as defined in the root.
+*/
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 
@@ -55,6 +59,9 @@ h1 {
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    margin: 0;
 }
 
 
@@ -69,16 +76,3 @@ h2 {
     unicode-bidi: isolate;
 }
 
-
-h1 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: 0.0075em;
-    margin: 0;
-}
-
-
-h1 a {
-    color: inherit;
-}
