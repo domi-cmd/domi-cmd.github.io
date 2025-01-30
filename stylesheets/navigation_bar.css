@@ -1,27 +1,68 @@
 /*
     NAV RELATED CSS BELOW
                             */
-                            
+
+
 /*
-TODO check for reiteration of values etc, clena up
+    Styling for the left-side elements of the navigation bar.
 */
-nav {
+.navigation_bar_button {
+    font-size: .875rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    min-width: 64px;
+    transition: background-color 250ms cubic-bezier(.4, 0, .2, 1) 0ms;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: .02857em;
+    text-transform: uppercase;
+    color: inherit;
+}
+   
+
+/*
+    General styling for the navigation bar
+*/
+body > div > header > nav {
     justify-content: space-between;
     align-items: center;
     display: flex;
     position: fixed;
+    flex-wrap: nowrap;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1100;
     background-color: var(--color-beige);
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 50px;
+  
+    transition: all 250ms;
+
+    .first_part {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 }
 
-body > header > nav.navbar--sticky {
+
+/* TODO Figure out why i cant move this part into the nav code above as I did with .frist_part (maybe the dynamic transition refresh?) */
+/*
+    This changes the navigation bar to a certain color, once it becomes sticky (once the user has scrolled a certain depth).
+*/
+body > div > header > nav.navbar--sticky {
     background: #1b1b1b;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
 }
 
+
+/*
+    Styling for the dropdown navigation menu icon.
+*/
 .icon-button {
     padding: 12px;
     border-radius: 50%;
@@ -35,16 +76,21 @@ body > header > nav.navbar--sticky {
     vertical-align: middle;
     min-width: unset;
     cursor: pointer;
+
+    /* The SVG in question here is the navigation menu button which shows up when the screen width falls below the required width for regular navigation menu display (mobile). */
+    svg {
+        fill: var(--color-green500);
+        width: 1em;
+        height: 1em;
+        display: inline-block;
+        font-size: 1.5rem;
+    }
 }
 
-.icon-button svg {
-    fill: var(--color-green500);
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    font-size: 1.5rem;
-}
 
+/*
+    Styling for the dropdown navigation menu for small width screens.
+*/
 #navbar-drawer {
     width: 100%;
     height: 100%;
@@ -54,80 +100,32 @@ body > header > nav.navbar--sticky {
     max-height: unset;
     background: var(--color-beige);
     color: var(--color-green500);
-}
 
-#navbar-drawer .navbar-drawer-links {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.header_button {
-    font-size: .875rem;
-    /*
-    padding: 8px 8px;
-    padding-top: 50px;
-    */
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 50px;
-    min-width: 64px;
-    box-sizing: border-box;
-    transition: background-color 250ms cubic-bezier(.4, 0, .2, 1) 0ms;
-    font-weight: 500;
-    line-height: 1.75;
-    border-radius: 4px;
-    letter-spacing: .02857em;
-    text-transform: uppercase;
-    color: inherit;
+    /* The links that pop up when the navigation menu is opened. Flex display so that the links are vertically and not horizontally aligned */
+    .navbar-drawer-links {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 
-body > header > nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1100;
-  
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-  
-    padding-left: 20px;
-    padding-right: 20px;
-  
-    min-height: 10px;
-  
-    transition: all 250ms;
-  
-}
-
-
-body > header > nav.navbar--sticky {
-    background: #1b1b1b;
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 
-                0px 2px 2px 0px rgba(0, 0, 0, .14), 
-                0px 1px 5px 0px rgba(0, 0, 0, .12);
-}
-
-nav .first_part {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-
-@media (min-width: 850px) {
+/*
+    Checks whether the screen width is below 890 px. If not, it hides the dropdown navigation menu.
+*/
+@media (min-width: 890px) {
     #drawer-open {
         display: none;
     }
 }
 
-@media (max-width: 850px) {
-nav .last_part {
-    display: none;
-}
+
+/*
+    Checks whether the screen width is above 890 px. If not, it hides the dropdown navigation menu.
+*/
+@media (max-width: 890px) {
+    nav .last_part {
+        display: none;
+    }
 }
