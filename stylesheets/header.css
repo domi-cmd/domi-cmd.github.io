@@ -47,6 +47,7 @@ nav {
     right: 0;
     left: 0;
     z-index: 1100;
+    background-color: var(--color-beige);
 }
 
 body > header > nav.navbar--sticky {
@@ -78,7 +79,7 @@ div {
 
 
 .icon-button svg {
-    fill: currentColor;
+    fill: var(--color-green500);
     width: 1em;
     height: 1em;
     display: inline-block;
@@ -92,8 +93,8 @@ div {
     border: 0;
     max-width: unset;
     max-height: unset;
-    background: #1b1b1b;
-    color: #e5e5e5;
+    background: var(--color-beige);
+    color: var(--color-green500);
 }
 
 #navbar-drawer .navbar-drawer-links {
