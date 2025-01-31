@@ -8,7 +8,7 @@
     height: 600px;
     padding: 1.5rem;
     border-radius: 1.5rem;
-    background: hsla(22, 62%, 76%, 1);
+    background: #522258;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
@@ -24,8 +24,8 @@
 
 .info span {
     display: block;
-    font-size: 1rem;
-    color: #ffcc00;
+    font-size: 1.5rem;
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 

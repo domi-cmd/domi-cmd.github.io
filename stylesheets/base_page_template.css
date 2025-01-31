@@ -13,3 +13,23 @@
 h1 {
     padding-top: 5px;
 }
+
+.main_container {
+    display: flex;
+    padding-left: 10px;
+    margin-right: 30px;
+}
+
+
+@media (max-width: 890px) {
+    .main_container {
+        display: block;
+    }
+}
+
+
+@media (min-width: 890px) {
+    .main_container {
+        display: flex;
+    }
+}
