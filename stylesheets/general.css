@@ -15,7 +15,7 @@ html {
 
 :root {
     --background-primary-color: black;
-    --background-secondary-color: darkgrey;
+    --background-secondary-color: black;
     --text-primary-color: white;
     --navbar-background-color: black;
 }
