@@ -35,7 +35,7 @@ body > div > header > nav {
     right: 0;
     left: 0;
     z-index: 1100;
-    background-color: var(--color-beige);
+    background-color: #D3D9D4;
     padding-left: 20px;
     padding-right: 20px;
     min-height: 50px;

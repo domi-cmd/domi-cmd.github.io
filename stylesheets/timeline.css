@@ -114,7 +114,7 @@
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: hsla(36, 31%, 90%, 1);
+  background-color: #2E3944;
   border: 4px solid hsla(172, 95%, 18%, 1);
   top: 15px;
   border-radius: 50%;
@@ -185,7 +185,7 @@
 */
 .content {
   padding: 20px 30px;
-  background-color: hsla(36, 31%, 90%, 1);
+  background-color: #2E3944;
   position: relative;
   border-radius: 6px;
   border: solid hsla(172, 95%, 18%, 1);
@@ -225,7 +225,7 @@
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid #2E3944;
     border-width: 10px 10px 10px 0;
     border-color: transparent hsla(172, 95%, 18%, 1) transparent transparent;
   }

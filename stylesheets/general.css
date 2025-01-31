@@ -22,8 +22,8 @@ html {
 body {
     margin: 0;
     margin-top: 65px;
-    background: var(--color-beige);
-    color: var(--color-green500);
+    background: #748D92;
+    color: #212A31;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: .875rem;
     font-weight: 400;

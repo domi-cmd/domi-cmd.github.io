@@ -1,8 +1,10 @@
 .template {
-    background-color: hsla(36, 31%, 93%, 1);
+    background-color: #124E66;
     /*max-width: 90%;*/
     border-radius: 10px;
-    border: 3px solid hsla(172, 95%, 18%, 1);
+    border: 3px solid black;
+
+    color: white;
     
     /*
     padding-left: 500px;
