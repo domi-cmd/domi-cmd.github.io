@@ -14,16 +14,17 @@ html {
 
 
 :root {
-    --color-beige: hsla(36, 31%, 90%, 1);
-    --color-green500: hsla(172, 95%, 18%, 1);
+    --background-primary-color: hsla(36, 31%, 85%, 1);
+    --background-secondary-color: hsla(36, 31%, 93%, 1);
+    --text-primary-color: hsla(172, 95%, 18%, 1);
 }
 
 
 body {
     margin: 0;
     margin-top: 65px;
-    background: var(--color-beige);
-    color: var(--color-green500);
+    background: var(--background-primary-color);
+    color: var(--text-primary-color);
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: .875rem;
     font-weight: 400;
@@ -42,7 +43,7 @@ div {
 
 
 /*
-    This is used for the styling of the navigation bar texts. They inherit the --color.green500 as defined in the root.
+    This is used for the styling of the navigation bar texts. They inherit the --text-primary-color as defined in the root.
 */
 a {
     text-decoration: none;

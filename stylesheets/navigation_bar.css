@@ -35,7 +35,7 @@ body > div > header > nav {
     right: 0;
     left: 0;
     z-index: 1100;
-    background-color: var(--color-beige);
+    background-color: var(--background-primary-color);
     padding-left: 20px;
     padding-right: 20px;
     min-height: 50px;
@@ -79,7 +79,7 @@ body > div > header > nav.navbar--sticky {
 
     /* The SVG in question here is the navigation menu button which shows up when the screen width falls below the required width for regular navigation menu display (mobile). */
     svg {
-        fill: var(--color-green500);
+        fill: var(--text-primary-color);
         width: 1em;
         height: 1em;
         display: inline-block;
@@ -98,8 +98,8 @@ body > div > header > nav.navbar--sticky {
     border: 0;
     max-width: unset;
     max-height: unset;
-    background: var(--color-beige);
-    color: var(--color-green500);
+    background: var(--background-primary-color);
+    color: var(--text-primary-color);
 
     /* The links that pop up when the navigation menu is opened. Flex display so that the links are vertically and not horizontally aligned */
     .navbar-drawer-links {

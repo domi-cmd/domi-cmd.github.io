@@ -14,7 +14,7 @@
   content: '';
   position: absolute;
   width: 6px;
-  background-color: hsla(172, 95%, 18%, 1);
+  background-color: var(--text-primary-color);
   top: 5px;
   bottom: 0;
   left: 50%;
@@ -40,7 +40,7 @@
   /* Remove solid background */
   width: 0;
   /* Dotted line to indicate future projects and not past ones */
-  border-left: 6px dotted hsla(172, 95%, 18%, 1);
+  border-left: 6px dotted var(--text-primary-color);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -65,7 +65,7 @@
   border-width: 25px;
   border-style: solid;
   /* Upward-facing arrow */
-  border-color: transparent transparent hsla(172, 95%, 18%, 1) transparent;
+  border-color: transparent transparent var(--text-primary-color) transparent;
 }
 
 
@@ -86,7 +86,7 @@
   border-width: 25px;
   border-style: solid;
   /* Upward-facing arrow */
-  border-color: transparent transparent hsla(172, 95%, 18%, 1) transparent;
+  border-color: transparent transparent var(--text-primary-color) transparent;
 }
 
 #no_future {
@@ -114,8 +114,8 @@
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: hsla(36, 31%, 90%, 1);
-  border: 4px solid hsla(172, 95%, 18%, 1);
+  background-color: var(--background-primary-color);
+  border: 4px solid var(--text-primary-color);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -149,9 +149,9 @@
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid hsla(172, 95%, 18%, 1);
+  border: medium solid var(--text-primary-color);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent hsla(172, 95%, 18%, 1);
+  border-color: transparent transparent transparent var(--text-primary-color);
 }
 
 
@@ -166,9 +166,9 @@
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid hsla(172, 95%, 18%, 1);
+  border: medium solid var(--text-primary-color);
   border-width: 10px 10px 10px 0;
-  border-color: transparent hsla(172, 95%, 18%, 1) transparent transparent;
+  border-color: transparent var(--text-primary-color) transparent transparent;
 }
 
 
@@ -185,10 +185,10 @@
 */
 .content {
   padding: 20px 30px;
-  background-color: hsla(36, 31%, 90%, 1);
+  background-color: var(--background-primary-color);
   position: relative;
   border-radius: 6px;
-  border: solid hsla(172, 95%, 18%, 1);
+  border: solid var(--text-primary-color);
 }
 
 
@@ -227,7 +227,7 @@
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent hsla(172, 95%, 18%, 1) transparent transparent;
+    border-color: transparent var(--text-primary-color) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
