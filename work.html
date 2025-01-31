@@ -176,48 +176,42 @@
         src="https://umami.diogotc.com/hellothere.js" data-domains="diogotc.com,www.diogotc.com"></script>
 
     <!-- Script that adds the background effect. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-links@3/tsparticles.preset.links.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.40.0/tsparticles.min.js"></script>
     <script>
-        function setupParticlesBackground() {
-            tsParticles.load("tsparticles", {
-                particles: {
-                    color: {
-                        value: "hsla(172, 95%, 18%, 1)", // Change this to your preferred color (e.g., yellow)
-                    },
-                    links: {
-                        enable: true,
-                        distance: 100,
-                        opacity: 0.5,
-                        color: "hsla(172, 95%, 18%, 1)",
-                    },
-                    number: {
-                        density: {
-                            enable: true,
-                            value_area: 800,
-                        },
-                        value: 55,
-                    },
-                    size: {
-                        value: 3,
-                    },
-                    move: {
-                        direction: 'none',
-                        enable: true,
-                        outMode: 'bounce',
-                        random: false,
-                        speed: 2,
-                        straight: false,
-                    },
-                    opacity: {
-                        value: 0.5,
-                    },
+        tsParticles.load("tsparticles", {
+            preset: "links",
+            background: {
+                color: "#000",
+            },
+            particles: {
+                color: {
+                    value: "#ffffff",
                 },
-                retina_detect: true,
-            });
-        }
+                number: {
+                    density: {
+                        enable: true,
+                        value_area: 800,
+                    },
+                    value: 55,
+                },
+                links: {
+                    color: "#ffffff",
+                    distance: 150,
+                    enable: true,
+                    opacity: 0.5,
+                    width: 1,
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: true,
+                },
+            },
+            retina_detect: true,
+        });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js"
-        integrity="sha256-Kq9IblhtnUOu75DRD4BIgJ4p4/7JUMMy6eXI/YcTo0c=" crossorigin="anonymous" async="" defer=""
-        onload="setupParticlesBackground()"></script>
 </body>
 
 </html>

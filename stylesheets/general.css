@@ -14,10 +14,10 @@ html {
 
 
 :root {
-    --background-primary-color: hsla(36, 31%, 85%, 1);
-    --background-secondary-color: hsla(36, 31%, 90%, 1);
-    --text-primary-color: hsla(172, 95%, 18%, 1);
-    --navbar-background-color: hsla(36, 31%, 85%, 1);
+    --background-primary-color: black;
+    --background-secondary-color: darkgrey;
+    --text-primary-color: white;
+    --navbar-background-color: black;
 }
 
 
