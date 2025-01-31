@@ -178,6 +178,7 @@
       drawerOpenBtn.addEventListener("click", () => {
         drawer.showModal();
         hideElements();  // Hide the navbar and other elements
+        window.scrollTo(0, 0);  // Scroll to the top of the page
       });
 
       // Close drawer and show navbar + other elements
