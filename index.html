@@ -70,15 +70,15 @@
       </div>
 
 
-      <div class="main_display">
-        <img class="profile_picture" src="images/CV_Cut1.jpeg">
-        <h1>Dominic Kronig</h1>
-        <h2>Student, Developer & Pianist</h2>
+      <div class="main_display hidden_when_nav_drawer_open">
+        <img class="profile_picture hidden_when_nav_drawer_open" src="images/CV_Cut1.jpeg">
+        <h1 class="hidden_when_nav_drawer_open">Dominic Kronig</h1>
+        <h2 class="hidden_when_nav_drawer_open">Student, Developer & Pianist</h2>
 
         <div class="socials">
           <!-- E-Mail Contact -->
           <div class="has_tooltip">
-            <a href="mailto:me@diogotc.com" target="_blank" rel="noopener">
+            <a class="hidden_when_nav_drawer_open" href="mailto:me@diogotc.com" target="_blank" rel="noopener">
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Email</title>
                 <path
@@ -92,7 +92,8 @@
 
           <!-- GitHub Contact -->
           <div class="has_tooltip">
-            <a href="https://github.com/domi-cmd" target="_blank" rel="noopener" data-umami-event="mail-social-hero">
+            <a class="hidden_when_nav_drawer_open" href="https://github.com/domi-cmd" target="_blank" rel="noopener"
+              data-umami-event="mail-social-hero">
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>GitHub</title>
                 <path
@@ -106,8 +107,8 @@
 
           <!-- Discord Contact -->
           <div class="has_tooltip">
-            <a href="https://discordapp.com/users/301033312653148160" target="_blank" rel="noopener"
-              data-umami-event="discord-social-hero">
+            <a class="hidden_when_nav_drawer_open" href="https://discordapp.com/users/301033312653148160"
+              target="_blank" rel="noopener" data-umami-event="discord-social-hero">
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Discord</title>
                 <path
@@ -121,8 +122,8 @@
 
           <!-- Instagram Contact -->
           <div class="has_tooltip">
-            <a href="https://www.instagram.com/domi_nic147/" target="_blank" rel="noopener"
-              data-umami-event="instagram-social-hero">
+            <a class="hidden_when_nav_drawer_open" href="https://www.instagram.com/domi_nic147/" target="_blank"
+              rel="noopener" data-umami-event="instagram-social-hero">
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Instagram</title>
                 <path
@@ -136,7 +137,8 @@
 
           <!-- LeetCode Contact UNFINISHED -->
           <div class="has_tooltip">
-            <a href="https://github.com/domi-cmd" target="_blank" rel="noopener" data-umami-event="mail-social-hero">
+            <a class="hidden_when_nav_drawer_open" href="https://github.com/domi-cmd" target="_blank" rel="noopener"
+              data-umami-event="mail-social-hero">
               <img src="images/leetcode.svg" alt="Your Image Description" width="50" height="50">
             </a>
             <!-- Tooltip with your custom text -->
@@ -150,8 +152,43 @@
   <!-- Script that adds the drop down navigation menu functionality. -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // 
       const navbar = document.querySelector("nav");
+      const hiddenElements = document.querySelectorAll(".hidden_when_nav_drawer_open"); // Get all elements with the specified class
+      const drawer = document.getElementById("navbar-drawer");
+      const drawerOpenBtn = document.getElementById("drawer-open");
+      const drawerCloseBtn = document.getElementById("drawer-close");
+
+      // Function to hide elements
+      function hideElements() {
+        navbar.classList.add("hidden");
+        hiddenElements.forEach(element => {
+          element.classList.add("hidden");
+        });
+      }
+
+      // Function to show elements
+      function showElements() {
+        navbar.classList.remove("hidden");
+        hiddenElements.forEach(element => {
+          element.classList.remove("hidden");
+        });
+      }
+
+      // Open drawer and hide navbar + other elements
+      drawerOpenBtn.addEventListener("click", () => {
+        drawer.showModal();
+        hideElements();  // Hide the navbar and other elements
+      });
+
+      // Close drawer and show navbar + other elements
+      document.querySelectorAll("#drawer-close, #navbar-drawer a").forEach(element => {
+        element.addEventListener("click", () => {
+          drawer.close();
+          showElements();  // Show the navbar and other elements again
+        });
+      });
+
+      // Sticky navbar functionality (unchanged)
       const observer = new IntersectionObserver(entries => {
         if (entries[0].boundingClientRect.y < 0) {
           navbar.classList.add("navbar--sticky");
@@ -160,21 +197,9 @@
         }
       });
       observer.observe(document.querySelector("#navbar-trigger"));
-
-      const drawer = document.getElementById("navbar-drawer");
-      const drawerOpenBtn = document.getElementById("drawer-open");
-      const drawerCloseBtn = document.getElementById("drawer-close");
-
-      drawerOpenBtn.addEventListener("click", () => {
-        drawer.showModal();
-      });
-      document.querySelectorAll("#drawer-close, #navbar-drawer a").forEach(element => {
-        element.addEventListener("click", () => {
-          drawer.close();
-        });
-      });
     });
   </script>
+
   <script async="" defer="" data-website-id="25c8aedf-a960-4b55-8c70-7bc4b2ad587b"
     src="https://umami.diogotc.com/hellothere.js" data-domains="diogotc.com,www.diogotc.com"></script>
 
