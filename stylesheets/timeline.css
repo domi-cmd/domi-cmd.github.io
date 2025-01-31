@@ -67,7 +67,7 @@
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid hsla(36, 31%, 90%, 1);
+  border: medium solid hsla(172, 95%, 18%, 1);
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent hsla(172, 95%, 18%, 1);
 }
@@ -81,7 +81,7 @@
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid hsla(36, 31%, 90%, 1);
+  border: medium solid hsla(172, 95%, 18%, 1);
   border-width: 10px 10px 10px 0;
   border-color: transparent hsla(172, 95%, 18%, 1) transparent transparent;
 }
@@ -119,7 +119,7 @@
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent hsla(172, 95%, 18%, 1) transparent transparent;
   }
 
 /* Make sure all circles are at the same spot */
