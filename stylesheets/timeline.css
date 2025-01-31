@@ -69,6 +69,31 @@
 }
 
 
+/*
+  The no_future timeline is for adding top spacing and top arrows for timelines which do not have a "future"-part which does the spacing and arrow adding already.
+  These two seperate could probably be bundled into a "top part" ID in the future.
+*/
+#no_future::before {
+  content: '';
+  position: absolute;
+  /* Position above the timeline */
+  top: -55px;
+  /* Relative positioning (centered)*/
+  left: 50%;
+  /* Center align (fine tuning so that it actually sits on top of timeline vertical line) */
+  margin-left: -25px;
+  /* Parameter for tuning the size of the arrow (triangle)*/
+  border-width: 25px;
+  border-style: solid;
+  /* Upward-facing arrow */
+  border-color: transparent transparent hsla(172, 95%, 18%, 1) transparent;
+}
+
+#no_future {
+  margin: 50px auto 0 auto;
+}
+
+
 /* 
   Styling for the container around content 
 */
@@ -182,6 +207,10 @@
   }
 
   .timeline_future::before {
+    left: 31px;
+  }
+
+  #no_future::before {
     left: 31px;
   }
 
