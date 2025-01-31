@@ -1,3 +1,20 @@
+.main_display {
+    background-color: var(--color-beige);
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    border-radius: 300px 300px 300px 300px; /* Round only the top corners */
+    padding-top: 7%;
+    display: block;
+    unicode-bidi: isolate;
+    min-width: 370px;
+    justify-content: center;
+    height: 0;
+}
+
+
+
 .main_display h1 {
     font-family: "Nunito", "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 4rem;
@@ -11,3 +28,12 @@
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+
+.profile_picture {
+    margin-top: 0;
+    padding: 0;
+    border: 0;
+    
+}
+

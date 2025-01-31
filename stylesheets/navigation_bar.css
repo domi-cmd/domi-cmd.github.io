@@ -35,7 +35,8 @@ body > div > header > nav {
     right: 0;
     left: 0;
     z-index: 1100;
-    background-color: var(--color-beige);
+    background-color: #233831;
+    color: var(--color-green500);
     padding-left: 20px;
     padding-right: 20px;
     min-height: 50px;
@@ -47,6 +48,11 @@ body > div > header > nav {
         align-items: center;
         gap: 1rem;
     }
+
+    .last_part {
+        background-color: var(--color-beige);
+        border-radius: 300px 300px 300px 300px;
+    }
 }
 
 
@@ -55,8 +61,9 @@ body > div > header > nav {
     This changes the navigation bar to a certain color, once it becomes sticky (once the user has scrolled a certain depth).
 */
 body > div > header > nav.navbar--sticky {
+    /*
     background: #1b1b1b;
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);*/
 }
 
 

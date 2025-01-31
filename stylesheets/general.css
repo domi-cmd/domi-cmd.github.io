@@ -14,7 +14,7 @@ html {
 
 
 :root {
-    --color-beige: hsla(36, 31%, 90%, 1);
+    --color-beige: hsla(36, 31%, 85%, 1);
     --color-green500: hsla(172, 95%, 18%, 1);
 }
 
@@ -22,8 +22,8 @@ html {
 body {
     margin: 0;
     margin-top: 65px;
-    background: var(--color-beige);
-    color: var(--color-green500);
+    background: #233831;
+    color: #12493f;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: .875rem;
     font-weight: 400;
