@@ -114,7 +114,8 @@
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: var(--background-primary-color);
+  background-color: var(--text-primary-color);
+  color: var(--text-primary-color);
   border: 4px solid var(--text-primary-color);
   top: 15px;
   border-radius: 50%;
