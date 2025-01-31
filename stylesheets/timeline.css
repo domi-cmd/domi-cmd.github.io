@@ -185,7 +185,7 @@
 */
 .content {
   padding: 20px 30px;
-  background-color: var(--background-primary-color);
+  background-color: var(--background-secondary-color);
   position: relative;
   border-radius: 6px;
   border: solid var(--text-primary-color);

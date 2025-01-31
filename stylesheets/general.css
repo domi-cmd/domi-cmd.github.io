@@ -15,7 +15,7 @@ html {
 
 :root {
     --background-primary-color: hsla(36, 31%, 85%, 1);
-    --background-secondary-color: hsla(36, 31%, 93%, 1);
+    --background-secondary-color: hsla(36, 31%, 90%, 1);
     --text-primary-color: hsla(172, 95%, 18%, 1);
     --navbar-background-color: hsla(36, 31%, 85%, 1);
 }
