@@ -1,0 +1,64 @@
+.card-wrap {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 600px;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background: hsla(22, 62%, 76%, 1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card-wrap:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    margin-bottom: 1rem;
+}
+
+.info span {
+    display: block;
+    font-size: 1rem;
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.inner {
+    flex-grow: 1;
+    /* Removed margins to allow image to align properly */
+}
+
+.image-holder {
+    position: absolute; /* Absolute positioning to control placement */
+    bottom: 0; /* Aligns to the bottom of the card */
+    right: 0; /* Aligns to the right side of the card */
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s cubic-bezier(.175,.885,.32,1.275);
+}
+
+.card-wrap:hover .image-holder {
+    transform: translateY(0.5em); /* Moves image slightly down */
+}
+
+.image-holder img {
+    
+    margin-top: 200px;
+    margin-left: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container and covers it */
+    object-position: right bottom; /* Aligns image to the bottom-right corner */
+    border-radius: 1rem;
+}
