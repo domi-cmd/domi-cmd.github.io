@@ -299,7 +299,7 @@ div {
 }
 
 .info.text_container.text_container {
-    text-align: right;
+    text-align: left;
     display: flex;
     flex-direction: column;
     z-index: var(--zindex-top);
@@ -321,7 +321,7 @@ div {
 .image-holder {
     width: 100%;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 15px;
     transition: transform 0.3s ease;
 }
 
@@ -478,6 +478,7 @@ dd {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 5px solid black;
 }
 /*
     SIZE STYLING FOR UNIVERSITY SPORT BOT
@@ -502,6 +503,7 @@ dd {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 5px solid black;
 }
 /*
     SIZE STYLING FOR SOLO BAILA
@@ -519,13 +521,14 @@ dd {
 }
 
 .covid_dashboard.image_container {
-    top: 0;
-    left: 20px;
+    top: -0;
+    right: 35px;
     position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 5px solid black;
 }
 /*
     SIZE STYLING FOR COVID DASHBOARD
@@ -550,6 +553,7 @@ dd {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 5px solid black;
 }
 /*
     SIZE STYLING FOR LUDO
