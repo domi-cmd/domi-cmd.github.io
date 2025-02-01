@@ -41,7 +41,7 @@
   width: 0;
   /* Dotted line to indicate future projects and not past ones */
   border-left: 6px dotted var(--text-primary-color);
-  top: 0;
+  top: 5px;
   bottom: 0;
   left: 50%;
   /* Adjust for proper centering */
