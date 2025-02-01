@@ -175,7 +175,7 @@
 
 
 /* General styles for the cards container */
-.cards.svelte-1eg3i2g {
+.cards.image_container {
     margin-top: var(--spacing-l);
 }
 
@@ -189,7 +189,7 @@
 }
 
 /* Styles for the card links */
-.card.svelte-vd84gr {
+.card.text_container {
     display: block;
     background: var(--background);
     color: var(--color);
@@ -202,19 +202,19 @@
 
 
 /* Hover effect for cards */
-.card.svelte-vd84gr:hover {
+.card.text_container:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 
-.card-wrap:hover .image-holder.svelte-1eg3i2g {
+.card-wrap:hover .image-holder.image_container {
     transform: translateY(35px);
     /* Moves image slightly down */
 }
 
 /* Styles for the card flourish (decorative images) */
-.card-flourish.svelte-vd84gr {
+.card-flourish.text_container {
     position: relative;
     width: 100%;
     height: 0;
@@ -223,34 +223,34 @@
     overflow: hidden;
 }
 
-.card-flourish.svelte-vd84gr img {
+.card-flourish.text_container img {
     position: absolute;
     max-width: none;
 }
 
 /* Styles for the card content wrapper */
-.card-wrap.svelte-vd84gr {
+.card-wrap.text_container {
     padding: 20px;
 }
 
 /* Styles for the card information section */
-.info.svelte-vd84gr {
+.info.text_container {
     margin-bottom: 10px;
 }
 
-.info.svelte-vd84gr span {
+.info.text_container span {
     display: block;
     font-size: 24px;
     font-weight: bold;
 }
 
-.info.svelte-vd84gr h2 {
+.info.text_container h2 {
     margin: 5px 0 0;
     font-size: 24px;
 }
 
 /* Styles for the inner content of the card */
-.inner.svelte-vd84gr {
+.inner.text_container {
     position: relative;
 }
 
@@ -262,33 +262,33 @@
     transition: transform 0.3s ease;
 }
 
-.image-holder.svelte-1eg3i2g img {
+.image-holder.image_container img {
     width: 100%;
     height: auto;
     display: block;
 }
 
 /* Specific styles for different types of image holders */
-.image-holder.docs.svelte-1eg3i2g {
+.image-holder.docs.image_container {
     background-color: #f9f9f9;
 }
 
-.image-holder.figma.svelte-1eg3i2g {
+.image-holder.figma.image_container {
     background-color: #e0e0e0;
 }
 
-.image-holder.hs.svelte-1eg3i2g {
+.image-holder.hs.image_container {
     background-color: #d0d0d0;
 }
 
 /* Styles for the figure element wrapping images */
-figure.svelte-cmqfoo {
+figure.fig_img {
     margin: 0;
     padding: 0;
 }
 
 /* Styles for images within the figure */
-img.svelte-cmqfoo {
+img.fig_img {
     width: 100%;
     height: auto;
     display: block;
@@ -330,7 +330,7 @@ div {
 
 
 @media (min-width: 992px) {
-    .card.svelte-vd84gr.svelte-vd84gr {
+    .card.text_container.text_container {
         max-height: 550px;
         border-radius: var(--64px);
         grid-column-start: var(--_grid-column-start);
@@ -339,7 +339,7 @@ div {
 }
 
 
-.card.svelte-vd84gr.svelte-vd84gr {
+.card.text_container.text_container {
     --_background: var(--background, var(--color-red));
     --_color: var(--color, var(--color-beige));
     --_grid-column-start: var(--grid-column-start, 1);
@@ -360,7 +360,7 @@ div {
 }
 
 
-.card-flourish.svelte-vd84gr.svelte-vd84gr {
+.card-flourish.text_container.text_container {
     position: absolute;
     left: 0;
     top: 0;
@@ -371,14 +371,14 @@ div {
 }
 
 @media (min-width: 992px) {
-    .card-wrap.svelte-vd84gr.svelte-vd84gr {
+    .card-wrap.text_container.text_container {
         padding: var(--42px) var(--64px) 0;
         border-radius: var(--64px);
     }
 }
 
 
-.card-wrap.svelte-vd84gr.svelte-vd84gr {
+.card-wrap.text_container.text_container {
     width: 100%;
     height: 100%;
     position: relative;
@@ -389,14 +389,14 @@ div {
     flex-direction: column;
 }
 
-.info.svelte-vd84gr.svelte-vd84gr {
+.info.text_container.text_container {
     text-align: right;
     display: flex;
     flex-direction: column;
     z-index: var(--zindex-top);
 }
 
-span.svelte-vd84gr.svelte-vd84gr {
+span.text_container.text_container {
     font-size: var(--15px);
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -404,7 +404,7 @@ span.svelte-vd84gr.svelte-vd84gr {
 }
 
 
-.info.svelte-vd84gr.svelte-vd84gr {
+.info.text_container.text_container {
     text-align: right;
     display: flex;
     flex-direction: column;
@@ -412,7 +412,7 @@ span.svelte-vd84gr.svelte-vd84gr {
 }
 
 
-.inner.svelte-vd84gr.svelte-vd84gr {
+.inner.text_container.text_container {
     position: relative;
     z-index: var(--zindex-content);
     transition: all .8s var(--transition-bounce);
@@ -425,13 +425,13 @@ span.svelte-vd84gr.svelte-vd84gr {
 }
 
 
-.image-holder.svelte-1eg3i2g {
+.image-holder.image_container {
     margin: 0 auto;
     width: 100%;
     max-width: 1300px;
 }
 
-figure.svelte-cmqfoo {
+figure.fig_img {
     position: relative;
 }
 
@@ -470,7 +470,7 @@ dd {
 }
 
 
-img.svelte-cmqfoo {
+img.fig_img {
     opacity: 1;
     transition: all .2s ease-in-out;
     max-width: inherit;
@@ -492,7 +492,7 @@ img {
 
 
 
-.inner.svelte-vd84gr.svelte-vd84gr {
+.inner.text_container.text_container {
     position: relative;
     z-index: var(--zindex-content);
     transition: all .8s var(--transition-bounce);
@@ -507,12 +507,12 @@ img {
 
 
 @media (min-width: 768px) {
-    .hs.svelte-1eg3i2g {
+    .hs.image_container {
         top: 0;
     }
 }
 
-.hs.svelte-1eg3i2g {
+.hs.image_container {
     top: 0;
     position: relative;
     width: 100%;
@@ -521,7 +521,7 @@ img {
     justify-content: center;
 }
 
-.image-holder.svelte-1eg3i2g {
+.image-holder.image_container {
     margin: 0 auto;
     width: 100%;
     max-width: 1300px;
