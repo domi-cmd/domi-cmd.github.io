@@ -137,6 +137,17 @@
     });
   </script>
   <script src="/scripts/transition_fade_out.js" defer></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Reset background color and opacity
+        document.querySelectorAll('.sport_fadeIn, .solo_baila_fadeIn, .dashboard_cov_fadeIn, .ludo_fadeIn, .default_fadeIn')
+            .forEach(function(element) {
+                element.style.backgroundColor = ''; // Reset background color
+                element.style.opacity = 1; // Ensure opacity is set to 1
+            });
+    });
+</script>
 </body>
 
 </html>
