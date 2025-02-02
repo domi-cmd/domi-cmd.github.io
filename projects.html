@@ -151,7 +151,7 @@
     </main>
 
     <main class="container_cards hidden_when_nav_drawer_open main_container">
-      <div class="cards image_container">
+      <div class="cards image_container hidden_when_nav_drawer_open">
         <div class="cards-content">
           <div
             style="display: contents; --background: var(--color-pink); --color: var(--color-text-bold); --grid-column-start: 1; --grid-column-end: 10;">
@@ -263,6 +263,12 @@
   <script src="/scripts/transition_fade_out.js" defer></script>
 
   <script src="/scripts/fade_in.js" defer></script>
+
+  <script>
+    window.addEventListener("popstate", function (event) {
+      location.reload(); // Reloads the page when navigating back
+    });
+  </script>
 
 </body>
 
