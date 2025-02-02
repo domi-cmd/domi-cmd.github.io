@@ -34,11 +34,13 @@ body > div > header > nav {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1100;
+    z-index: 10000;
     background-color: var(--background-primary-color);
     padding-left: 20px;
     padding-right: 20px;
     min-height: 50px;
+    opacity: 1;  /* Always visible */
+    transition: none;  /* No transition on opacity or anything else */
   
     transition: all 250ms;
 

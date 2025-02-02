@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/stylesheets/base_page_template.css">
   <link rel="stylesheet" href="/stylesheets/navigation_bar.css">
   <link rel="stylesheet" href="/stylesheets/card_wrap.css">
+  <link rel="stylesheet" href="/stylesheets/transition.css">
 </head>
 
 <body>
@@ -135,11 +136,12 @@
     </main>
 
     <main class="container_cards hidden_when_nav_drawer_open">
+      <div class="transition-overlay"></div> <!-- Transition Effect -->
       <div class="cards image_container">
         <div class="cards-content">
           <div
             style="display: contents; --background: var(--color-pink); --color: var(--color-text-bold); --grid-column-start: 1; --grid-column-end: 10;">
-            <a class="card text_container" sveltekit:prefetch="" data-sveltekit-preload-code=""
+            <a class="card text_container transition-link" sveltekit:prefetch="" data-sveltekit-preload-code=""
               data-sveltekit-preload-data="" href="/projects/sport_bot.html"
               style="grid-column-start: 1; grid-column-end: 10; background: var(--color-pink); color: var(--color-text-bold);">
               <div class="card-wrap text_container">
@@ -325,6 +327,38 @@
       retina_detect: true,
     });
   </script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const overlay = document.querySelector(".transition-overlay");
+
+      // Add a slight delay before adding fade-in class to prevent flash
+      setTimeout(() => {
+        document.body.classList.add("fade-in");  // Fade in content after a short delay
+      }, 100);  // 100ms delay, adjust if needed
+
+      // On page load, remove transition effect
+      setTimeout(() => {
+        overlay.style.clipPath = "circle(0% at bottom right)";
+      }, 100);  // Keep initial transition from being visible immediately
+
+      // Handle link clicks
+      document.querySelectorAll(".transition-link").forEach(link => {
+        link.addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent instant navigation
+
+          const href = this.href;
+          overlay.style.clipPath = "circle(150% at bottom right)"; // Start animation
+
+          setTimeout(() => {
+            window.location.href = href; // Navigate after animation
+          }, 1000); // Adjust based on animation duration
+        });
+      });
+    });
+  </script>
+
 
 </body>
 
