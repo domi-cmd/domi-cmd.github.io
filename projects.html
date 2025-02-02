@@ -24,15 +24,19 @@
             </svg>
           </button>
           <h1>
-            <a href="/projects.html">My Projects</a>
+            <a class="transition-link" data-overlay-class="default_menu" href="/projects.html">My Projects</a>
           </h1>
         </div>
         <div class="last_part">
-          <a class="navigation_bar_button" href="/index.html">About Me</a>
-          <a class="navigation_bar_button" href="/projects.html">Projects</a>
-          <a class="navigation_bar_button" href="/work.html">Work</a>
-          <a class="navigation_bar_button" href="/education.html">Education</a>
-          <a class="navigation_bar_button" href="/download_cv.html">Download CV</a>
+          <a class="navigation_bar_button transition-link" data-overlay-class="default_menu" href="/index.html">About
+            Me</a>
+          <a class="navigation_bar_button transition-link" data-overlay-class="default_menu"
+            href="/projects.html">Projects</a>
+          <a class="navigation_bar_button transition-link" data-overlay-class="default_menu" href="/work.html">Work</a>
+          <a class="navigation_bar_button transition-link" data-overlay-class="default_menu"
+            href="/education.html">Education</a>
+          <a class="navigation_bar_button transition-link" data-overlay-class="default_menu"
+            href="/download_cv.html">Download CV</a>
         </div>
       </nav>
 
@@ -47,11 +51,15 @@
         </button>
 
         <div class="navbar-drawer-links">
-          <a class="navigation_bar_button" href="/index.html">About Me</a>
-          <a class="navigation_bar_button" href="/projects.html">Projects</a>
-          <a class="navigation_bar_button" href="/work.html">Work</a>
-          <a class="navigation_bar_button" href="/education.html">Education</a>
-          <a class="navigation_bar_button" href="/download_cv.html">Download CV</a>
+          <a class="navigation_bar_button transition-link" data-overlay-class="default_menu" href="/index.html">About
+            Me</a>
+          <a class="navigation_bar_button transition-link" data-overlay-class="default_menu"
+            href="/projects.html">Projects</a>
+          <a class="navigation_bar_button transition-link" data-overlay-class="default_menu" href="/work.html">Work</a>
+          <a class="navigation_bar_button transition-link" data-overlay-class="default_menu"
+            href="/education.html">Education</a>
+          <a class="navigation_bar_button transition-link" data-overlay-class="default_menu"
+            href="/download_cv.html">Download CV</a>
         </div>
       </dialog>
 
@@ -59,6 +67,7 @@
     </header>
 
     <main>
+      <div class="transition-overlay"></div> <!-- Transition Effect -->
       <!-- Sparcle effect -->
       <div id="tsparticles" style="position: fixed; inset: 0; z-index: -10;">
         <canvas data-generated="true" style="width: 100% !important; height: 100% !important; position: fixed !important; z-index: 0 !important; top: 0px !important; left: 0px 
@@ -136,13 +145,12 @@
     </main>
 
     <main class="container_cards hidden_when_nav_drawer_open">
-      <div class="transition-overlay"></div> <!-- Transition Effect -->
       <div class="cards image_container">
         <div class="cards-content">
           <div
             style="display: contents; --background: var(--color-pink); --color: var(--color-text-bold); --grid-column-start: 1; --grid-column-end: 10;">
-            <a class="card text_container transition-link" sveltekit:prefetch="" data-sveltekit-preload-code=""
-              data-sveltekit-preload-data="" href="/projects/sport_bot.html"
+            <a class="card text_container transition-link" data-overlay-class="sport_bot" sveltekit:prefetch=""
+              data-sveltekit-preload-code="" data-sveltekit-preload-data="" href="/projects/sport_bot.html"
               style="grid-column-start: 1; grid-column-end: 10; background: var(--color-pink); color: var(--color-text-bold);">
               <div class="card-wrap text_container">
                 <div class="info text_container">
@@ -163,8 +171,8 @@
 
           <div
             style="display: contents; --background: var(--color-mint); --color: var(--color-text-bold); --grid-column-start: 11; --grid-column-end: 26;">
-            <a class="card text_container " sveltekit:prefetch="" data-sveltekit-preload-code=""
-              data-sveltekit-preload-data="" href="/projects/solo_baila.html"
+            <a class="card text_container transition-link" data-overlay-class="solo_baila" sveltekit:prefetch=""
+              data-sveltekit-preload-code="" data-sveltekit-preload-data="" href="/projects/solo_baila.html"
               style="grid-column-start: 11; grid-column-end: 26; background: var(--color-mint); color: var(--color-text-bold);">
               <div class="card-wrap text_container">
                 <div class="info text_container"><span class="text_container">Solo Baila</span>
@@ -184,8 +192,8 @@
 
           <div
             style="display: contents; --background: var(--color-rust); --color: var(--color-text-bold); --grid-column-start: 1; --grid-column-end: 16;">
-            <a class="card text_container" sveltekit:prefetch="" data-sveltekit-preload-code=""
-              data-sveltekit-preload-data="" href="/projects/dashboard_cov.html"
+            <a class="card text_container transition-link" data-overlay-class="dashboard_cov" sveltekit:prefetch=""
+              data-sveltekit-preload-code="" data-sveltekit-preload-data="" href="/projects/dashboard_cov.html"
               style="grid-column-start: 1; grid-column-end: 16; background: var(--color-rust); color: var(--color-text-bold);">
               <div class="card-wrap text_container">
                 <div class="info text_container"><span class="text_container">Covid19 Dashboard</span>
@@ -205,8 +213,8 @@
 
           <div
             style="display: contents; --background: var(--color-babyblue); --color: var(--color-text-bold); --grid-column-start: 17; --grid-column-end: 26;">
-            <a class="card text_container large" sveltekit:prefetch="" data-sveltekit-preload-code=""
-              data-sveltekit-preload-data="" href="/projects/ludo.html"
+            <a class="card text_container large transition-link" data-overlay-class="ludo" sveltekit:prefetch=""
+              data-sveltekit-preload-code="" data-sveltekit-preload-data="" href="/projects/ludo.html"
               style="grid-column-start: 17; grid-column-end: 26; background: var(--color-babyblue); color: var(--color-text-bold);">
               <div class="card-wrap text_container">
                 <div class="info text_container">
@@ -237,128 +245,16 @@
 
 
   <!-- Script that adds the drop down navigation menu functionality. -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const navbar = document.querySelector("nav");
-      const hiddenElements = document.querySelectorAll(".hidden_when_nav_drawer_open"); // Get all elements with the specified class
-      const drawer = document.getElementById("navbar-drawer");
-      const drawerOpenBtn = document.getElementById("drawer-open");
-      const drawerCloseBtn = document.getElementById("drawer-close");
-
-      // Function to hide elements
-      function hideElements() {
-        navbar.classList.add("hidden");
-        hiddenElements.forEach(element => {
-          element.classList.add("hidden");
-        });
-      }
-
-      // Function to show elements
-      function showElements() {
-        navbar.classList.remove("hidden");
-        hiddenElements.forEach(element => {
-          element.classList.remove("hidden");
-        });
-      }
-
-      // Open drawer and hide navbar + other elements
-      drawerOpenBtn.addEventListener("click", () => {
-        drawer.showModal();
-        hideElements();  // Hide the navbar and other elements
-        window.scrollTo(0, 0);  // Scroll to the top of the page
-      });
-
-      // Close drawer and show navbar + other elements
-      document.querySelectorAll("#drawer-close, #navbar-drawer a").forEach(element => {
-        element.addEventListener("click", () => {
-          drawer.close();
-          showElements();  // Show the navbar and other elements again
-        });
-      });
-
-      // Sticky navbar functionality (unchanged)
-      const observer = new IntersectionObserver(entries => {
-        if (entries[0].boundingClientRect.y < 0) {
-          navbar.classList.add("navbar--sticky");
-        } else {
-          navbar.classList.remove("navbar--sticky");
-        }
-      });
-      observer.observe(document.querySelector("#navbar-trigger"));
-    });
-  </script>
+  <script src="/scripts/navbar_dropdown_drawer.js" defer></script>
   <script async="" defer="" data-website-id="25c8aedf-a960-4b55-8c70-7bc4b2ad587b"
     src="https://umami.diogotc.com/hellothere.js" data-domains="diogotc.com,www.diogotc.com"></script>
 
   <!-- Script that adds the background effect. -->
   <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-links@3/tsparticles.preset.links.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.40.0/tsparticles.min.js"></script>
-  <script>
-    tsParticles.load("tsparticles", {
-      preset: "links",
-      background: {
-        color: "#000",
-      },
-      particles: {
-        color: {
-          value: "#ffffff",
-        },
-        number: {
-          density: {
-            enable: true,
-            value_area: 800,
-          },
-          value: 55,
-        },
-        links: {
-          color: "#ffffff",
-          distance: 150,
-          enable: true,
-          opacity: 0.5,
-          width: 1,
-        },
-        move: {
-          enable: true,
-          speed: 2,
-          direction: "none",
-          random: true,
-        },
-      },
-      retina_detect: true,
-    });
-  </script>
+  <script src="/scripts/background_particles.js" defer></script>
 
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const overlay = document.querySelector(".transition-overlay");
-
-      // Add a slight delay before adding fade-in class to prevent flash
-      setTimeout(() => {
-        document.body.classList.add("fade-in");  // Fade in content after a short delay
-      }, 100);  // 100ms delay, adjust if needed
-
-      // On page load, remove transition effect
-      setTimeout(() => {
-        overlay.style.clipPath = "circle(0% at bottom right)";
-      }, 100);  // Keep initial transition from being visible immediately
-
-      // Handle link clicks
-      document.querySelectorAll(".transition-link").forEach(link => {
-        link.addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent instant navigation
-
-          const href = this.href;
-          overlay.style.clipPath = "circle(150% at bottom right)"; // Start animation
-
-          setTimeout(() => {
-            window.location.href = href; // Navigate after animation
-          }, 1000); // Adjust based on animation duration
-        });
-      });
-    });
-  </script>
-
+  <script src="/scripts/transition_fade_out.js" defer></script>
 
 </body>
 

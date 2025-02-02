@@ -1,5 +1,5 @@
 /* Fullscreen Overlay */
-.transition-overlay {
+.transition-overlay.sport_bot {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,6 +11,61 @@
   clip-path: circle(0% at bottom right);
   transition: clip-path 1s cubic-bezier(.25, 1, .30, 1);
 }
+
+.transition-overlay.solo_baila {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-mint); /* Default Green */
+  z-index: 9999;
+  pointer-events: none;
+  clip-path: circle(0% at bottom right);
+  transition: clip-path 1s cubic-bezier(.25, 1, .30, 1);
+}
+
+.transition-overlay.dashboard_cov {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-rust); /* Default Green */
+  z-index: 9999;
+  pointer-events: none;
+  clip-path: circle(0% at bottom right);
+  transition: clip-path 1s cubic-bezier(.25, 1, .30, 1);
+}
+
+
+.transition-overlay.ludo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-babyblue); /* Default Green */
+  z-index: 9999;
+  pointer-events: none;
+  clip-path: circle(0% at bottom right);
+  transition: clip-path 1s cubic-bezier(.25, 1, .30, 1);
+}
+
+
+.transition-overlay.default_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black; /* Default Green */
+  z-index: 9999;
+  pointer-events: none;
+  clip-path: circle(0% at bottom right);
+  transition: clip-path 1s cubic-bezier(.25, 1, .30, 1);
+}
+
 
 /* Keyframes for Animation */
 @keyframes circle-in-bottom-right {
