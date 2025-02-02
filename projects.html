@@ -334,6 +334,49 @@
   document.addEventListener('DOMContentLoaded', resetOverlay);
 </script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      // Function to reset the background color
+      resetBackground();
+
+      // Reset the background color immediately after page load
+      function resetBackground() {
+          // List all possible overlay classes
+          const overlayClasses = [
+              '.transition-overlay.sport_bot',
+              '.transition-overlay.solo_baila',
+              '.transition-overlay.dashboard_cov',
+              '.transition-overlay.ludo',
+              '.transition-overlay.default_menu'
+          ];
+
+          // Loop through each overlay and reset the background color
+          overlayClasses.forEach(function (overlayClass) {
+              const overlay = document.querySelector(overlayClass);
+              if (overlay) {
+                  overlay.style.backgroundColor = 'transparent'; // Reset background color
+              }
+          });
+
+          // Reset clip-path for all transition overlays to prevent blocking content
+          const overlays = document.querySelectorAll('.transition-overlay');
+          overlays.forEach(function(overlay) {
+              overlay.style.clipPath = 'circle(0%)';  // Reset the overlay animation state
+              overlay.style.transition = 'none';  // Disable the transition for now
+          });
+
+          // Optionally, re-enable transition after a small timeout for smooth animation
+          setTimeout(function() {
+              overlays.forEach(function(overlay) {
+                  overlay.style.transition = 'clip-path 1s cubic-bezier(.25, 1, .30, 1)';  // Re-enable transition
+                  overlay.style.clipPath = 'circle(100%)';  // Begin transition out
+              });
+          }, 100);  // Small timeout to ensure smooth transition
+      }
+  });
+</script>
+
+
 </body>
 
 </html>
