@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const overlay = document.querySelector(".transition-overlay");
 
+    // Forcefully reset overlay on page load (including back navigation)
+    overlay.style.clipPath = "circle(0% at bottom right)";
+
     // Add a slight delay before adding fade-in class to prevent flash
     setTimeout(() => {
         document.body.classList.add("fade-in");  // Fade in content after a short delay
