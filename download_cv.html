@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/stylesheets/base_page_template.css">
   <link rel="stylesheet" href="/stylesheets/navigation_bar.css">
   <link rel="stylesheet" href="/stylesheets/transition.css">
-  <link rel="stylesheet" href="/stylesheets/page_fade_ins.css">
+
 
   <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="pragma" content="no-cache">
@@ -105,46 +105,6 @@
 
   <script src="/scripts/transition_fade_out.js" defer></script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Reset background color and opacity
-        document.querySelectorAll('.sport_fadeIn, .solo_baila_fadeIn, .dashboard_cov_fadeIn, .ludo_fadeIn, .default_fadeIn')
-            .forEach(function(element) {
-                element.style.backgroundColor = ''; // Reset background color
-                element.style.opacity = 1; // Ensure opacity is set to 1
-            });
-    });
-</script>
-
-
-<script>
-  // Listen for the 'popstate' event (back button, browser history change)
-  window.addEventListener('popstate', function(event) {
-      // Reset the transition overlay immediately when the back button is pressed
-      resetOverlay();
-  });
-
-  // Function to reset the overlay (used when back button is pressed or when the page loads)
-  function resetOverlay() {
-      const overlays = document.querySelectorAll('.transition-overlay');
-      overlays.forEach(function(overlay) {
-          // Reset clip-path and other transition properties to immediately hide the overlay
-          overlay.style.clipPath = 'circle(0%)';
-          overlay.style.transition = 'none';  // Disable the transition immediately
-      });
-
-      // Give the browser time to render the reset and then re-enable the transition
-      setTimeout(function() {
-          overlays.forEach(function(overlay) {
-              overlay.style.transition = 'clip-path 1s cubic-bezier(.25, 1, .30, 1)';  // Re-enable transition
-              overlay.style.clipPath = 'circle(100%)';  // Begin transition out
-          });
-      }, 50);  // Small delay to allow layout to update before transition starts
-  }
-
-  // Call resetOverlay on initial page load as well
-  document.addEventListener('DOMContentLoaded', resetOverlay);
-</script>
 
 </body>
 
