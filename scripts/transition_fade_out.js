@@ -39,3 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+window.addEventListener("pageshow", () => {
+    const overlay = document.querySelector(".transition-overlay");
+    overlay.style.clipPath = "circle(0% at bottom right)";
+});
