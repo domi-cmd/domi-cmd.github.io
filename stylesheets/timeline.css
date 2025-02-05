@@ -65,7 +65,7 @@
   border-width: 25px;
   border-style: solid;
   /* Upward-facing arrow */
-  border-color: transparent transparent var(--text-primary-color) transparent;
+  border-color: transparent transparent var(--app-color-charcoal300) transparent;
 }
 
 
