@@ -125,27 +125,32 @@
 
 /* Apply unique colors to specific circles */
 .circle-1::after {
-  background-color: var(--app-color-charcoal400);  /* Tomato */
+  background-color: var(--app-color-charcoal400);
+  /* Tomato */
   border-color: var(--app-color-charcoal400);
 }
 
 .circle-2::after {
-  background-color: var(--app-color-charcoal500);  /* SteelBlue */
+  background-color: var(--app-color-charcoal500);
+  /* SteelBlue */
   border-color: var(--app-color-charcoal500);
 }
 
 .circle-3::after {
-  background-color: var(--app-color-charcoal600);  /* SteelBlue */
+  background-color: var(--app-color-charcoal600);
+  /* SteelBlue */
   border-color: var(--app-color-charcoal600);
 }
 
 .circle-4::after {
-  background-color: var(--app-color-charcoal700);  /* SteelBlue */
+  background-color: var(--app-color-charcoal700);
+  /* SteelBlue */
   border-color: var(--app-color-charcoal700);
 }
 
 .circle-5::after {
-  background-color: var(--app-color-charcoal800);  /* SteelBlue */
+  background-color: var(--app-color-charcoal800);
+  /* SteelBlue */
   border-color: var(--app-color-charcoal800);
 }
 
@@ -243,27 +248,32 @@
 
 /* Apply specific background colors for each content section */
 .content-1 {
-  background-color: var(--app-color-charcoal400);  /* Tomato */
+  background-color: var(--app-color-charcoal400);
+  /* Tomato */
   border-color: var(--app-color-charcoal400);
 }
 
 .content-2 {
-  background-color: var(--app-color-charcoal500);  /* SteelBlue */
+  background-color: var(--app-color-charcoal500);
+  /* SteelBlue */
   border-color: var(--app-color-charcoal500);
 }
 
 .content-3 {
-  background-color: var(--app-color-charcoal600);  /* LimeGreen */
+  background-color: var(--app-color-charcoal600);
+  /* LimeGreen */
   border-color: var(--app-color-charcoal600);
 }
 
 .content-4 {
-  background-color: var(--app-color-charcoal700);  /* LimeGreen */
+  background-color: var(--app-color-charcoal700);
+  /* LimeGreen */
   border-color: var(--app-color-charcoal700);
 }
 
 .content-5 {
-  background-color: var(--app-color-charcoal800);  /* LimeGreen */
+  background-color: var(--app-color-charcoal800);
+  /* LimeGreen */
   border-color: var(--app-color-charcoal800);
 }
 
@@ -319,4 +329,5 @@
   }
 
   
+
 }
