@@ -253,12 +253,11 @@ h2 {
 
 
 .hidden {
-    display: none;
-}
-
-
-.site-footer {
-    display: block;   /* Ensure footer is not set to display: none */
+    display: none !important; /* This will ensure the footer is properly hidden */
+  }
+  
+  .site-footer {
+    display: block;  /* Ensure footer is not set to display: none */
     visibility: visible;  /* Ensure it's not hidden */
     background-color: #222;
     color: white;
@@ -267,20 +266,20 @@ h2 {
     width: 100%;
     box-sizing: border-box;
     margin: 0;
-}
-
-
-.footer-content {
+  }
+  
+  .footer-content {
     max-width: 1200px;
     margin: auto;
-}
-
-.footer-nav a {
+  }
+  
+  .footer-nav a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-}
-
-.footer-nav a:hover {
+  }
+  
+  .footer-nav a:hover {
     text-decoration: underline;
-}
+  }
+  
