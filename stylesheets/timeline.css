@@ -228,6 +228,11 @@
   border-color: transparent var(--app-color-charcoal400) transparent transparent;
 }
 
+.arrow-6.left::before {
+  border-color: transparent transparent transparent var(--app-color-charcoal400);
+}
+
+
 
 /* 
   Fix the circle for containers on the right side 
@@ -277,6 +282,12 @@
   border-color: var(--app-color-charcoal800);
 }
 
+.content-6 {
+  background-color: var(--app-color-charcoal900);
+  /* LimeGreen */
+  border-color: var(--app-color-charcoal900);
+}
+
 
 
 /* 
@@ -316,6 +327,17 @@
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
+
+  .arrow-2.left::before {
+    border-color: transparent var(--app-color-charcoal700) transparent transparent;
+  }
+  
+
+  .arrow-4.left::before {
+    border-color: transparent var(--app-color-charcoal500) transparent;
+  }
+  
+
 
   /* Make sure all circles are at the same spot */
   .left::after,
