@@ -125,34 +125,41 @@
 
 /* Apply unique colors to specific circles */
 .circle-1::after {
-  background-color: var(--app-color-charcoal400);
+  background-color: var(--app-color-charcoal900);
   /* Tomato */
-  border-color: var(--app-color-charcoal400);
+  border-color: var(--app-color-charcoal900);
 }
 
 .circle-2::after {
-  background-color: var(--app-color-charcoal500);
+  background-color: var(--app-color-charcoal800);
   /* SteelBlue */
-  border-color: var(--app-color-charcoal500);
+  border-color: var(--app-color-charcoal800);
 }
 
 .circle-3::after {
-  background-color: var(--app-color-charcoal600);
-  /* SteelBlue */
-  border-color: var(--app-color-charcoal600);
-}
-
-.circle-4::after {
   background-color: var(--app-color-charcoal700);
   /* SteelBlue */
   border-color: var(--app-color-charcoal700);
 }
 
-.circle-5::after {
-  background-color: var(--app-color-charcoal800);
+.circle-4::after {
+  background-color: var(--app-color-charcoal600);
   /* SteelBlue */
-  border-color: var(--app-color-charcoal800);
+  border-color: var(--app-color-charcoal600);
 }
+
+.circle-5::after {
+  background-color: var(--app-color-charcoal500);
+  /* SteelBlue */
+  border-color: var(--app-color-charcoal500);
+}
+
+.circle-6::after {
+  background-color: var(--app-color-charcoal400);
+  /* SteelBlue */
+  border-color: var(--app-color-charcoal400);
+}
+
 
 
 
@@ -209,27 +216,31 @@
 
 /* Custom colors for specific arrows */
 .arrow-1.right::before {
-  border-color: transparent var(--app-color-charcoal800) transparent transparent;
+  border-color: transparent var(--app-color-charcoal900) transparent transparent;
 }
 
 .arrow-2.left::before {
-  border-color: transparent transparent transparent var(--app-color-charcoal700);
+  border-color: transparent transparent transparent var(--app-color-charcoal800);
 }
 
 .arrow-3.right::before {
-  border-color: transparent var(--app-color-charcoal600) transparent transparent;
+  border-color: transparent var(--app-color-charcoal700) transparent transparent;
 }
 
 .arrow-4.left::before {
-  border-color: transparent transparent transparent var(--app-color-charcoal500);
+  border-color: transparent transparent transparent var(--app-color-charcoal600);
 }
 
 .arrow-5.right::before {
-  border-color: transparent var(--app-color-charcoal400) transparent transparent;
+  border-color: transparent var(--app-color-charcoal500) transparent transparent;
 }
 
 .arrow-6.left::before {
   border-color: transparent transparent transparent var(--app-color-charcoal400);
+}
+
+.arrow-6.right::before {
+  border-color: transparent transparent transparent var(--app-color-charcoal300);
 }
 
 
@@ -253,39 +264,39 @@
 
 /* Apply specific background colors for each content section */
 .content-1 {
-  background-color: var(--app-color-charcoal400);
+  background-color: var(--app-color-charcoal900);
   /* Tomato */
-  border-color: var(--app-color-charcoal400);
+  border-color: var(--app-color-charcoal900);
 }
 
 .content-2 {
-  background-color: var(--app-color-charcoal500);
+  background-color: var(--app-color-charcoal800);
   /* SteelBlue */
-  border-color: var(--app-color-charcoal500);
+  border-color: var(--app-color-charcoal800);
 }
 
 .content-3 {
-  background-color: var(--app-color-charcoal600);
-  /* LimeGreen */
-  border-color: var(--app-color-charcoal600);
-}
-
-.content-4 {
   background-color: var(--app-color-charcoal700);
   /* LimeGreen */
   border-color: var(--app-color-charcoal700);
 }
 
-.content-5 {
-  background-color: var(--app-color-charcoal800);
+.content-4 {
+  background-color: var(--app-color-charcoal600);
   /* LimeGreen */
-  border-color: var(--app-color-charcoal800);
+  border-color: var(--app-color-charcoal600);
+}
+
+.content-5 {
+  background-color: var(--app-color-charcoal500);
+  /* LimeGreen */
+  border-color: var(--app-color-charcoal500);
 }
 
 .content-6 {
-  background-color: var(--app-color-charcoal900);
+  background-color: var(--app-color-charcoal400);
   /* LimeGreen */
-  border-color: var(--app-color-charcoal900);
+  border-color: var(--app-color-charcoal400);
 }
 
 
