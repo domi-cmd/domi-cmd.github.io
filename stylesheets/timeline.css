@@ -86,7 +86,7 @@
   border-width: 25px;
   border-style: solid;
   /* Upward-facing arrow */
-  border-color: transparent transparent var(--text-primary-color) transparent;
+  border-color: transparent transparent var(--app-color-charcoal300) transparent;
 }
 
 #no_future {
@@ -100,7 +100,7 @@
 .container {
   padding: 10px 40px;
   position: relative;
-  background-color: inherit;
+  background-color: var(--background-primary-color);
   width: 50%;
 }
 
@@ -108,6 +108,7 @@
 /* 
   Styling for the circles on the timeline 
 */
+/* Default circle styling */
 .container::after {
   content: '';
   position: absolute;
@@ -121,6 +122,33 @@
   border-radius: 50%;
   z-index: 1;
 }
+
+/* Apply unique colors to specific circles */
+.circle-1::after {
+  background-color: var(--app-color-charcoal400);  /* Tomato */
+  border-color: var(--app-color-charcoal400);
+}
+
+.circle-2::after {
+  background-color: var(--app-color-charcoal500);  /* SteelBlue */
+  border-color: var(--app-color-charcoal500);
+}
+
+.circle-3::after {
+  background-color: var(--app-color-charcoal600);  /* SteelBlue */
+  border-color: var(--app-color-charcoal600);
+}
+
+.circle-4::after {
+  background-color: var(--app-color-charcoal700);  /* SteelBlue */
+  border-color: var(--app-color-charcoal700);
+}
+
+.circle-5::after {
+  background-color: var(--app-color-charcoal800);  /* SteelBlue */
+  border-color: var(--app-color-charcoal800);
+}
+
 
 
 /* 
@@ -152,7 +180,7 @@
   right: 30px;
   border: medium solid var(--text-primary-color);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent var(--text-primary-color);
+  border-color: transparent transparent transparent var(--app-color-charcoal400);
 }
 
 
@@ -169,7 +197,30 @@
   left: 30px;
   border: medium solid var(--text-primary-color);
   border-width: 10px 10px 10px 0;
-  border-color: transparent var(--text-primary-color) transparent transparent;
+  border-color: transparent var(--app-color-charcoal400) transparent transparent;
+}
+
+
+
+/* Custom colors for specific arrows */
+.arrow-1.right::before {
+  border-color: transparent var(--app-color-charcoal800) transparent transparent;
+}
+
+.arrow-2.left::before {
+  border-color: transparent transparent transparent var(--app-color-charcoal700);
+}
+
+.arrow-3.right::before {
+  border-color: transparent var(--app-color-charcoal600) transparent transparent;
+}
+
+.arrow-4.left::before {
+  border-color: transparent transparent transparent var(--app-color-charcoal500);
+}
+
+.arrow-5.right::before {
+  border-color: transparent var(--app-color-charcoal400) transparent transparent;
 }
 
 
@@ -181,9 +232,7 @@
 }
 
 
-/* 
-  The actual content 
-*/
+/* Default content styling */
 .content {
   padding: 20px 30px;
   background-color: var(--background-secondary-color);
@@ -191,6 +240,33 @@
   border-radius: 6px;
   border: solid var(--text-primary-color);
 }
+
+/* Apply specific background colors for each content section */
+.content-1 {
+  background-color: var(--app-color-charcoal400);  /* Tomato */
+  border-color: var(--app-color-charcoal400);
+}
+
+.content-2 {
+  background-color: var(--app-color-charcoal500);  /* SteelBlue */
+  border-color: var(--app-color-charcoal500);
+}
+
+.content-3 {
+  background-color: var(--app-color-charcoal600);  /* LimeGreen */
+  border-color: var(--app-color-charcoal600);
+}
+
+.content-4 {
+  background-color: var(--app-color-charcoal700);  /* LimeGreen */
+  border-color: var(--app-color-charcoal700);
+}
+
+.content-5 {
+  background-color: var(--app-color-charcoal800);  /* LimeGreen */
+  border-color: var(--app-color-charcoal800);
+}
+
 
 
 /* 
@@ -226,9 +302,9 @@
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid green;
     border-width: 10px 10px 10px 0;
-    border-color: transparent var(--text-primary-color) transparent transparent;
+    border-color: transparent white transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
@@ -241,4 +317,6 @@
   .right {
     left: 0%;
   }
+
+  
 }
