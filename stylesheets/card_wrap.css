@@ -242,6 +242,15 @@ img.fig_img {
     .cards-content {
         display: block;
     }
+
+    a.card.text_container.large.transition-link{
+        margin-top: 7%;
+        margin-bottom: 20%;
+    }
+
+    a.card.text_container.transition-link{
+        margin-top: 7%;
+    }
 }
 
 

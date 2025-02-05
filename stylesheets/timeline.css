@@ -65,7 +65,7 @@
   border-width: 25px;
   border-style: solid;
   /* Upward-facing arrow */
-  border-color: transparent transparent var(--app-color-charcoal300) transparent;
+  border-color: transparent transparent var(--app-color-charcoal400) transparent;
 }
 
 
@@ -86,7 +86,7 @@
   border-width: 25px;
   border-style: solid;
   /* Upward-facing arrow */
-  border-color: transparent transparent var(--app-color-charcoal300) transparent;
+  border-color: transparent transparent var(--app-color-charcoal500) transparent;
 }
 
 #no_future {
