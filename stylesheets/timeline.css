@@ -340,13 +340,18 @@
   }
 
   .arrow-2.left::before {
-    border-color: transparent var(--app-color-charcoal700) transparent transparent;
+    border-color: transparent var(--app-color-charcoal800) transparent transparent;
   }
   
 
   .arrow-4.left::before {
-    border-color: transparent var(--app-color-charcoal500) transparent;
+    border-color: transparent var(--app-color-charcoal600) transparent;
   }
+
+  .arrow-6.left::before {
+    border-color: transparent var(--app-color-charcoal400) transparent transparent;
+  }
+  
   
 
 
