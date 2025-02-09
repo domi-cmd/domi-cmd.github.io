@@ -101,7 +101,7 @@ body > div > header > nav.navbar--sticky {
     max-width: unset;
     max-height: unset;
     background: transparent;
-    color: var(--text-primary-color);
+    color: var(--title-page-text-color);
 
     /* The links that pop up when the navigation menu is opened. Flex display so that the links are vertically and not horizontally aligned */
     .navbar-drawer-links {
