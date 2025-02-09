@@ -1,0 +1,27 @@
+#darkModeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+#toggleIcon svg {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dark-mode #moonIcon {
+    display: none;
+}
+
+.dark-mode #sunIcon {
+    display: block;
+    fill: white;
+}
+
+#sunIcon {
+    display: none;
+    fill: black;
+}

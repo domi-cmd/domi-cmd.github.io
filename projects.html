@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/stylesheets/base_page_template.css">
   <link rel="stylesheet" href="/stylesheets/navigation_bar.css">
   <link rel="stylesheet" href="/stylesheets/card_wrap.css">
+  <link rel="stylesheet" href="/stylesheets/darkmode.css">
 
 
 
@@ -33,6 +34,20 @@
           </h1>
         </div>
         <div class="last_part">
+          <button id="darkModeToggle">
+            <span id="toggleIcon">
+              <svg id="moonIcon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.75 15.898c-1.035.502-2.166.773-3.348.773-4.696 0-8.5-3.805-8.5-8.5 0-2.29.89-4.396 2.343-5.973a.5.5 0 0 0-.46-.83A9.484 9.484 0 0 0 3.25 9.5c0 5.247 4.253 9.5 9.5 9.5 3.4 0 6.4-1.739 8.085-4.381a.5.5 0 0 0-.085-.721Z" />
+              </svg>
+              <svg id="sunIcon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                style="display: none;">
+                <path
+                  d="M12 18.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13ZM12 4V2m0 20v-2m8-8h2m-20 0h2m15.071-6.071 1.414-1.414m-17.556 0 1.414 1.414M4.929 17.071l-1.414 1.414m17.556 0-1.414-1.414"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
           <a class="navigation_bar_button transition-link" data-overlay-class="default_menu" href="/index.html">About
             Me</a>
           <a class="navigation_bar_button transition-link" data-overlay-class="default_menu"
