@@ -14,7 +14,7 @@
   content: '';
   position: absolute;
   width: 6px;
-  background-color: var(--text-primary-color);
+  background-color: var(--timeline-line-color);
   top: 5px;
   bottom: 0;
   left: 50%;
@@ -40,7 +40,7 @@
   /* Remove solid background */
   width: 0;
   /* Dotted line to indicate future projects and not past ones */
-  border-left: 6px dotted var(--text-primary-color);
+  border-left: 6px dotted var(--timeline-line-color);
   top: 5px;
   bottom: 0;
   left: 50%;
@@ -100,7 +100,7 @@
 .container {
   padding: 10px 40px;
   position: relative;
-  background-color: var(--background-primary-color);
+  background-color: var(--background-secondary-color);
   width: 50%;
 }
 

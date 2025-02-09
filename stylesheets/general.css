@@ -187,10 +187,13 @@ html {
     --curve-timing: .35s;
     --shadow-menu: 0px 10px 60px rgba(0, 0, 0, .1);
 
+    --title-page-text-color: black;
+
     --background-primary-color: black;
     --background-secondary-color: black;
     --text-primary-color: white;
     --navbar-background-color: black;
+    --timeline-line-color: white;
 }
 
 
