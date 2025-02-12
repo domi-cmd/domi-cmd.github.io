@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1vw;
+    font-size: 1.25vw;
     text-align: center;
     overflow: hidden;
 }
@@ -15,7 +15,7 @@
 
 .text_bubble_div_title {
     width: auto;
-    border-radius: 120px;
+    border-radius: 50%;
     border: 3px solid black;
     background-color: black;
 
@@ -49,7 +49,7 @@
 
 
 .bubble {
-
+    
 }
 
 
@@ -67,3 +67,28 @@
 
 
 /* Media query for smaller screens */
+@media screen and (max-width: 890px) {
+    .bubble_container {
+        display: flex;  /* Switch to flexbox layout */
+        flex-wrap: wrap;  /* Allow wrapping of items */
+        justify-content: space-between;  /* Distribute items evenly */
+        gap: 30px;  /* Space between items */
+    }
+
+    .bubble {
+        border-radius: 40px;
+        flex: 1 1 100%;  /* Make each item take full width, but shrink when needed */
+        font-size: 5vw;
+    }
+
+    .text_bubble_div_title {
+        font-size: 8vw;
+        margin-bottom: 5%;
+    }
+
+
+    .text_bubble_div {
+        font-size: 3vw;
+        margin-bottom: 5%;
+    }
+}
