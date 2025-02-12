@@ -4,7 +4,9 @@
     border: 3px solid black;
     background-color: black;
 
-    display: flex;
+    
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
     align-items: center;
     justify-content: center;
     font-size: 1.25vw;
