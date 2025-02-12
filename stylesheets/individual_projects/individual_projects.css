@@ -13,6 +13,7 @@
     text-align: center;
     overflow: hidden;
     padding: 0;
+    height: auto;
 }
 
 
@@ -48,7 +49,7 @@
     width: 100%; /* Ensure image fills the width of the container */
     height: 100%; /* Ensure image fills the height of the container */
     object-fit: cover; /* Ensures the image completely fills the div */
-    object-position: center; /* Ensures the image is centered */
+    object-position: contain; /* Ensures the image is centered */
 }
 
 
@@ -63,7 +64,7 @@
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     /* 3 columns */
-    grid-template-rows: repeat(20, 1fr);
+    grid-template-rows: repeat(15, 1fr);
     /* 2 rows, each 200px tall */
     gap: 2vw;  /* Adjusts dynamically */
     padding: 3vw; /* Adjusts with screen size */
@@ -99,4 +100,12 @@
         margin-bottom: 5%;
         height: auto;
     }
+}
+
+
+.decorative_blob {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: var(--bubbles-background-color);
+    border-radius: 50%;
 }
