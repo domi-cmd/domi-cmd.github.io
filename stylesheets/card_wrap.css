@@ -298,7 +298,7 @@ dd {
 /*
     SIZE STYLING FOR UNIVERSITY SPORT BOT
 */
-@media (min-width: 768px) {
+@media (min-width: 950px) {
     .sport_bot.image_container {
         top: 0;
     }
@@ -323,7 +323,7 @@ dd {
 /*
     SIZE STYLING FOR SOLO BAILA
 */
-@media (min-width: 768px) {
+@media (min-width: 950px) {
     .solo_baila.image_container {
         top: 0;
     }
@@ -348,7 +348,7 @@ dd {
 /*
     SIZE STYLING FOR COVID DASHBOARD
 */
-@media (min-width: 768px) {
+@media (min-width: 950px) {
     .covid_dashboard.image_container {
         top: 0;
     }
@@ -373,7 +373,7 @@ dd {
 /*
     SIZE STYLING FOR LUDO
 */
-@media (min-width: 768px) {
+@media (min-width: 950px) {
     .ludo.image_container {
         top: 0;
     }

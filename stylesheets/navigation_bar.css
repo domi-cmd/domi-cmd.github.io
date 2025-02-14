@@ -116,7 +116,7 @@ body > div > header > nav.navbar--sticky {
 /*
     Checks whether the screen width is below 890 px. If not, it hides the dropdown navigation menu.
 */
-@media (min-width: 890px) {
+@media (min-width: 950px) {
     #drawer-open {
         display: none;
     }
@@ -126,7 +126,7 @@ body > div > header > nav.navbar--sticky {
 /*
     Checks whether the screen width is above 890 px. If not, it hides the dropdown navigation menu.
 */
-@media (max-width: 890px) {
+@media (max-width: 949px) {
     nav .last_part {
         display: none;
     }
