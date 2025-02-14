@@ -161,4 +161,9 @@
     }
 }
 
+/* Adjust amount of rows */
+.bubble_container {
+    grid-template-rows: repeat(8, 1fr);
+    
+}
 
