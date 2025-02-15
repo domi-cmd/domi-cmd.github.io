@@ -93,12 +93,12 @@
 
 
 #deco_3 {
-    grid-column: 6 / 7;
+    grid-column: 7 / 8;
     grid-row: 6 / 7;
     align-self: start;  /* Prevents vertical stretching */
     justify-self: start; /* Prevents horizontal stretching */
     margin-top: -80%;
-    margin-left: 120%;
+    margin-left: -20%;
 }
 
 #deco_4 {
