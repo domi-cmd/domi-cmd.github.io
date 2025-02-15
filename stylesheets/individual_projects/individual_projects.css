@@ -41,7 +41,6 @@
     overflow: hidden; /* Clips the image to match the border radius */
     width: 100%; /* Take full width of assigned grid space */
     height: 100%; /* Take full height of assigned grid space */
-
 }
 
 .image_bubble_div img {
