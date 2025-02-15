@@ -107,7 +107,8 @@
 
 
 .decorative_blob {
-    width: 100%;
+    width: 1fr;
+    height: auto;
     aspect-ratio: 1;
     background-color: var(--bubbles-background-color);
     border-radius: 50%;

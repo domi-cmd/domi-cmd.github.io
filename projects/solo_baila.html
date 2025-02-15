@@ -151,7 +151,8 @@
 
         <div class="text_bubble_div bubble" id="text_3" style="padding-left: 10px; padding-right: 10px;">
           <h1>
-            This project has been a great chance to deepen my skills in Python, team development, aswell as working under a tight deadline!
+            This project has been a great chance to deepen my skills in Python, team development, aswell as working
+            under a tight deadline!
           </h1>
         </div>
 
@@ -224,7 +225,14 @@
   </script>
 
 
-
+  <script>
+    window.addEventListener("load", () => {
+      document.body.style.display = "none";
+      requestAnimationFrame(() => {
+        document.body.style.display = "block";
+      });
+    });
+  </script>
 </body>
 
 </html>
