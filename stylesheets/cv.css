@@ -1,0 +1,356 @@
+.cv {
+    background-color: var(--background);
+    color: var(--bodyTextColor);
+    max-width: 800px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, .35) 0 5px 15px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cv-body {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.cv-sidebar {
+    background-color: var(--sidebarBgColor);
+    color: var(--sidebarTextColor);
+    padding: 1em 1.5em;
+    box-sizing: border-box;
+}
+
+.cv-sidebar-heading {
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+}
+
+.cv-contact .cv-contact-item {
+    margin-bottom: .3em;
+}
+
+.cv-contact .cv-contact-item i {
+    width: 24px;
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--accentColor);
+}
+
+.fa-location-pin,
+.fa-map-marker {
+    --fa: "\f041";
+}
+
+.fa-solid,
+.fas {
+    font-weight: 900;
+}
+
+.fa-home-lg,
+.fa-house-chimney {
+    --fa: "\e3af";
+}
+
+.cv-sidebar-heading {
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+}
+
+.cv-skills-section .cv-skills-section-title {
+    margin: .8em 0 .2em;
+    font-size: .75rem;
+    color: var(--accentColor);
+    font-weight: 400;
+}
+
+.cv-skills-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.cv-skills-entry .cv-skills-entry--name {
+    margin: 0;
+    font-weight: 700;
+}
+
+.cv-skills-entry .cv-skills-entry--rating-circle__active {
+    color: var(--accentColor);
+}
+
+.cv-skills-entry .cv-skills-entry--rating-circle__inactive {
+    color: var(--sidebarSkillsBgColor);
+}
+
+.fa-circle {
+    --fa: "\f111";
+}
+
+button,
+a {
+    text-decoration: none;
+    color: var(--accentColor);
+    font-weight: 700;
+}
+
+.cv-sections {
+    background-color: var(--bodyBgColor);
+    padding: 1em 2.5em;
+}
+
+.fa-graduation-cap,
+.fa-mortar-board {
+    --fa: "\f19d";
+}
+
+.fa-calendar-alt,
+.fa-calendar-days {
+    --fa: "\f073";
+}
+
+.fa-location-dot,
+.fa-map-marker-alt {
+    --fa: "\f3c5";
+}
+
+.cv-education-item .cv-education-item--name,
+.cv-education-item .cv-jobs-item--name,
+.cv-jobs-item .cv-education-item--name,
+.cv-jobs-item .cv-jobs-item--name {
+    font-size: 1.3em;
+    text-align: right;
+}
+
+.cv-education-item .cv-education-item--description,
+.cv-education-item .cv-jobs-item--description,
+.cv-jobs-item .cv-education-item--description,
+.cv-jobs-item .cv-jobs-item--description {
+    margin-top: .2em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: block-inline;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+
+.cv-sections h2 {
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+    padding-bottom: .2em;
+}
+
+.cv-sections h2 i {
+    margin-right: .4em;
+}
+
+.fa-briefcase {
+    --fa: "\f0b1";
+}
+
+.fa,
+.fa-brands,
+.fa-regular,
+.fa-solid,
+.fab,
+.far,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.fa-classic,
+.fa-regular,
+.fa-solid,
+.far,
+.fas {
+    font-family: "Font Awesome 6 Free";
+}
+
+.cv-education-item,
+.cv-jobs-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.fa-paint-brush,
+.fa-paintbrush {
+    --fa: "\f1fc";
+}
+
+.cv-projects-item {
+    margin-bottom: 1em;
+}
+
+.cv-projects-item .cv-projects-item-header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+}
+
+.cv-projects-item .cv-projects-item-header .cv-projects-item--name {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--accentColor);
+}
+
+.cv-projects-item .cv-projects-item-header {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align content to the left */
+}
+
+.cv-projects-item .cv-projects-item--info {
+    display: flex;
+    justify-content: space-between; /* Space out the date and info */
+    width: 100%; /* Make the container take the full width */
+    font-size: 0.9em; /* Slightly smaller font for details */
+}
+
+.cv-projects-item .cv-projects-item--info > div {
+    display: flex;
+    gap: 4px; /* Add spacing between items */
+    align-items: center; /* Align items horizontally */
+}
+
+.cv-extracurriculars-item a {
+    color: inherit;
+    font-weight: inherit;
+}
+
+.cv-projects h2 {
+    border-bottom: 1px solid;
+}
+
+html {
+    --background: #fff;
+    --accentColor: #0b3948;
+    --headerBgColor: #0b3948;
+    --headerTextColor: #fff;
+    --sidebarBgColor: #cddfda;
+    --sidebarTextColor: #000;
+    --sidebarSkillsBgColor: #8d9da7;
+    --bodyBgColor: #fff;
+    --bodyTextColor: #000;
+    background: var(--background);
+}
+
+:host,
+:root {
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+}
+
+:host,
+:root {
+    --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
+}
+
+:host,
+:root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+
+body {
+    font-family: open sans, sans-serif;
+    font-size: 12px;
+    margin-bottom: 4em;
+}
+
+
+.fa-circle {
+    --fa: "\f111";
+}
+
+.fa,
+.fa-brands,
+.fa-regular,
+.fa-solid,
+.fab,
+.far,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+.fa-classic,
+.fa-regular,
+.fa-solid,
+.far,
+.fas {
+    font-family: "Font Awesome 6 Free";
+}
+
+.fa-solid,
+.fas {
+    font-weight: 900;
+}
+
+.cv-skills-entry .cv-skills-entry--rating-circle__active {
+    color: var(--accentColor);
+}
+
+.cv header h1 {
+    text-transform: uppercase;
+}
+
+.cv header {
+    padding: 1em 2em;
+    background-color: var(--headerBgColor);
+    color: var(--headerTextColor);
+    font-weight: 700;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+body {
+    margin-top: 0;
+}
+
+#header {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 0px;
+}
+
+
+.cv-extracurriculars-item {
+    display: flex;
+    align-items: center; /* Aligns the icon and text vertically */
+  }
+  
+  .cv-extracurriculars-item i {
+    margin-right: 10px; /* Adds consistent space between the icon and text */
+  }
+  
+  .cv-extracurriculars-item span {
+    margin-left: 0; /* Ensure no extra margin on the left of the text */
+  }
