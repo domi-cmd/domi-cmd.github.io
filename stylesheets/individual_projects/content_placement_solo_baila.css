@@ -55,7 +55,7 @@
 
 #text_3 {
     grid-column: 1 / 6;
-    grid-row: 12 / 14;
+    grid-row: 11 / 13;
 }
 
 
@@ -189,4 +189,10 @@
     #text_3 {
         margin: 0;
     }
+}
+
+/* Adjust amount of rows */
+.bubble_container {
+    grid-template-rows: repeat(14, 1fr);
+    
 }
