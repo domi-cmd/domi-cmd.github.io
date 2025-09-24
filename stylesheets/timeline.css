@@ -239,9 +239,11 @@
   border-color: transparent transparent transparent var(--app-color-charcoal400);
 }
 
+/*
 .arrow-6.right::before {
   border-color: transparent transparent transparent var(--app-color-charcoal300);
 }
+*/
 
 
 
