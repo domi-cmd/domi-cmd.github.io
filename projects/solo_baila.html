@@ -266,7 +266,7 @@
           </div>
 
         </div>
-        <p style="margin-top: 30px; margin-bottom: 0;">&copy; 2025 Dominic Kronig. All Rights Reserved.</p>
+        <p style="margin-top: 30px; margin-bottom: 0;">&copy; <span id="copyright-year"></span> Dominic Kronig. All Rights Reserved.</p>
       </div>
     </footer>
   </div>
@@ -313,9 +313,10 @@
       retina_detect: true,
     });
   </script>
-
-
   <script src="/scripts/individual_projects_page_reload.js" defer></script>
+  <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
