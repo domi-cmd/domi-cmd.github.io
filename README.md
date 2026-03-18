@@ -13,7 +13,7 @@ Welcome to my personal website repository! This project is a **simple, customiza
 **Easy Deployment** – Updates go live automatically  
 
 ## License
-This project is open-source under the MIT License. Feel free to use, modify, and share!
+This project is open-source under the MIT License. Feel free to use, modify, and share. :)
 
 ## Contributing
 Got ideas? Feel free to contribute!
